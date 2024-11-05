@@ -14,7 +14,8 @@ dependencies {
     implementation("aws.sdk.kotlin:rekognition:1.2.51")
     implementation("aws.sdk.kotlin:comprehend:1.2.51")
     implementation("aws.sdk.kotlin:transcribe:1.2.51")
-    implementation("aws.sdk.kotlin:s3:1.0.0")
+    implementation("aws.sdk.kotlin:transcribe:1.2.51")
+    implementation("aws.sdk.kotlin:s3:1.2.51")
     testImplementation(kotlin("test"))
 }
 
