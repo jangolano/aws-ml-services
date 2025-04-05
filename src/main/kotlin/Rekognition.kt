@@ -6,8 +6,6 @@ import aws.sdk.kotlin.services.rekognition.model.Image
 import aws.sdk.kotlin.services.rekognition.model.Label
 
 class Rekognition {
-
-
     suspend fun findLabels(fileName: String) :List<Label>?{
         val fullFilePath = this::class.java.classLoader.getResourceAsStream(fileName)
         val picture = Image {

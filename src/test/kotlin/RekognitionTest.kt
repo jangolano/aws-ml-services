@@ -11,8 +11,8 @@ class RekognitionTest {
             val rekognition = Rekognition()
             val labels = rekognition.findLabels("camping.jpeg")
             if(labels != null) {
-                labels?.forEach {
-                   println("Item Found: ${it.name}, Confidence: ${it.confidence}%")
+                labels.forEach {
+                    println("Item Found: ${it.name}, Confidence: ${it.confidence}%")
                 }
             }else{
                 fail()
